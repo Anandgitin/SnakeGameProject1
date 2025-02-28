@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Snake Game</h1>
+
+    <!-- Player Name Input -->
+    <div>
+        <label for="playerName">Player Name:</label>
+        <input type="text" id="playerName" placeholder="Enter your name">
+    </div>
+
+    <!-- Level Selection -->
+    <div>
+        <label for="level">Difficulty:</label>
+        <select id="level">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+    </div>
+
+    <!-- Start Game Button -->
+    <button id="startGame">Start Game</button>
+
+    <!-- Display Top 3 High Scores -->
+    <h2>Top 3 High Scores</h2>
+    <ul id="scoreList">
+        <!-- High Scores will be displayed here -->
+    </ul>
+
+    <!-- Game Canvas -->
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+
+    <script src="game.js"></script>
+</body>
+</html>
